@@ -3,12 +3,13 @@ import React from "react";
 const Songs = () => {
   return (
     <>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold">
-        List of Songs
-      </h3>
-      <div className="justify-center mx-auto my-10">
+       <h2 className="mx-auto text-center pt-5 text-xl font-bold">
+        Songs
+      </h2>
+      <div className="justify-center mx-auto mb-10">
         <p className="text-white text-center mb-10">
-          Listen while you work or play. Check out this music getting attention...
+          Listen while you work or play. Check out this music getting
+          attention...
         </p>
         <div className="max-w-[90%] mx-auto px-10">
           <ul className="list bg-base-100 rounded-box shadow-md">

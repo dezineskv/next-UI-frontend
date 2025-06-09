@@ -21,9 +21,9 @@ const SingleTodo = ({ id }: { id: number }) => {
 
   return (
     <>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold">
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
         Product Page
-      </h3>
+      </h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <div className="card card-side bg-base-100 shadow-sm">
           <figure className="max-w-[300px]">

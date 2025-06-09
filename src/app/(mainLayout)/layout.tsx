@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Carousel from './../../components/Carousel';
 import Songs from './../../components/Songs';
+import ModuleHero from './../../components/ModuleHero';
 
 const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -10,6 +11,7 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
       {children}
       <Carousel/>
       <Songs/>
+      <ModuleHero/>
       <Footer />
     </>
   );

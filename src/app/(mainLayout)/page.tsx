@@ -23,7 +23,9 @@ const TodosList = () => {
     <>
       <Hero />
 
-      <div className="mx-auto text-center pt-10 mb-10">Todos</div>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
+       ToDos List
+      </h2>
       <div className="flex justify-center items-center">
         <p className="text-white max-w[50%] text-center mb-2">
           Here's a list of ToDos from the API...

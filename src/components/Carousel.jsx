@@ -3,11 +3,11 @@ import React from "react";
 const Carousel = () => {
   return (
     <>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold">
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
         Remember to Travel
-      </h3>
-      <div className="justify-center mx-auto my-10">
-        <p className="text-white max-w[50%] text-center mb-10">
+      </h2>
+      <div className="justify-center mx-auto mb-10">
+        <p className="text-white text-center mb-10">
           Some views to consider for you next trip...
         </p>
 
