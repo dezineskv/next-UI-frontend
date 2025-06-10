@@ -4,7 +4,25 @@ const AboutUs = () => {
   return (
     <>
       <h2 className="mx-auto text-center pt-5 text-xl font-bold">ABOUT</h2>
-      <h3 className="mx-auto text-center pt-20 text-lg">Timelines</h3>
+      <div className="hero bg-base-200 my-20">
+        <div className="hero-content flex-col lg:flex-row">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            className="max-w-sm rounded-lg shadow-2xl"
+          />
+          <div>
+            <h1 className="text-5xl font-bold">Box Office News</h1>
+            <p className="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
+              et a id nisi.
+            </p>
+            <button className="btn btn-primary">Services</button>
+          </div>
+        </div>
+      </div>
+      <h3 className="mx-auto text-center pt-2 text-lg">Timelines</h3>
+
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <ul className="timeline">
           <li>
@@ -24,13 +42,13 @@ const AboutUs = () => {
               </svg>
             </div>
             <div className="timeline-end timeline-box">
-              First Macintosh computer
+              Atari & Nintendo
             </div>
             <hr />
           </li>
           <li>
             <hr />
-            <div className="timeline-start">1998</div>
+            <div className="timeline-start">1995</div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -90,7 +108,7 @@ const AboutUs = () => {
           </li>
           <li>
             <hr />
-            <div className="timeline-start">2015</div>
+            <div className="timeline-start">2018</div>
             <div className="timeline-middle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,9 +129,9 @@ const AboutUs = () => {
       </div>
       <div className="divider"></div>
 
-      <h3 className="mx-auto text-center pt-5 text-lg">Stats</h3>
+      <h3 className="mx-auto text-center pt-5text-lg">Stats</h3>
 
-      <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
+      <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10  pb-10 ">
         <div className="stats shadow">
           <div className="stat">
             <div className="stat-figure text-primary">
