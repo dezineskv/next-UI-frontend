@@ -56,13 +56,7 @@ const TodosTop = () => {
                       >
                         Details
                       </Link>
-                      {/* <Link
-                    href={`/todo/${todo.id}`}
-                    className="btn btn-xs btn-primary"
-                  > */}
-                      <button className="btn btn-xs btn-primary">Edit</button>
-
-                      <button className="btn btn-xs btn-primary">Delete</button>
+                      
                     </td>
                   </tr>
                 ) : (
