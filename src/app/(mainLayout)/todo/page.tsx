@@ -20,10 +20,10 @@ const TodosTop = () => {
   return (
     <>
       <h2 className="mx-auto text-center pt-15 text-5xl font-bold">
-        Top 5 ToDos
+        TOP 5 TODOS
       </h2>
-      <div className="flex justify-center items-center flex-col">
-        <p className="w-full flex justify-center mt-5">
+      <div className="flex justify-center items-center flex-col max-w-10/12">
+        <p className="w-full flex justify-end mt-5">
           <a href="/all-todos">
             <button className="btn ">See All</button>
           </a>

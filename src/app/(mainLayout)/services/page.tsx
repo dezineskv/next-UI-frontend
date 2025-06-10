@@ -3,62 +3,399 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">Services</h2>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">SERVICES</h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
-        <div className="stats shadow">
-          <div className="stat">
-            <div className="stat-figure text-primary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-8 w-8 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                ></path>
-              </svg>
+        <div className="card bg-primary text-primary-content w-96">
+          <div className="card-body">
+            <h2 className="card-title">Card title!</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+            <div className="card-actions justify-end">
+              <button className="btn">Buy Now</button>
             </div>
-            <div className="stat-title">Total Likes</div>
-            <div className="stat-value text-primary">25.6K</div>
-            <div className="stat-desc">21% more than last month</div>
           </div>
-
-          <div className="stat">
-            <div className="stat-figure text-secondary">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                className="inline-block h-8 w-8 stroke-current"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M13 10V3L4 14h7v7l9-11h-7z"
-                ></path>
-              </svg>
+        </div>
+        <div className="card bg-primary text-primary-content w-96">
+          <div className="card-body">
+            <h2 className="card-title">Card title!</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+            <div className="card-actions justify-end">
+              <button className="btn">Buy Now</button>
             </div>
-            <div className="stat-title">Page Views</div>
-            <div className="stat-value text-secondary">2.6M</div>
-            <div className="stat-desc">21% more than last month</div>
           </div>
-
-          <div className="stat">
-            <div className="stat-figure text-secondary">
-              <div className="avatar avatar-online">
-                <div className="w-16 rounded-full">
-                  <img src="https://cdn.flyonui.com/fy-assets/avatar/avatar-16.png" />
-                </div>
-              </div>
+        </div>
+        <div className="card bg-primary text-primary-content w-96">
+          <div className="card-body">
+            <h2 className="card-title">Card title!</h2>
+            <p>
+              A card component has a figure, a body part, and inside body there
+              are title and actions parts
+            </p>
+            <div className="card-actions justify-end">
+              <button className="btn">Buy Now</button>
             </div>
-            <div className="stat-value">86%</div>
-            <div className="stat-title">Tasks done</div>
-            <div className="stat-desc text-secondary">31 tasks remaining</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
+        <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card-body">
+            <span className="badge badge-xs badge-warning">Most Popular</span>
+            <div className="flex justify-between">
+              <h2 className="text-3xl font-bold">Premium</h2>
+              <span className="text-xl">$29/mo</span>
+            </div>
+            <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>High-resolution image generation</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Customizable style templates</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Batch processing capabilities</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>AI-driven image enhancements</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">Seamless cloud integration</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">
+                  Real-time collaboration tools
+                </span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <button className="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card-body">
+            <span className="badge badge-xs badge-warning">Most Popular</span>
+            <div className="flex justify-between">
+              <h2 className="text-3xl font-bold">Premium</h2>
+              <span className="text-xl">$29/mo</span>
+            </div>
+            <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>High-resolution image generation</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Customizable style templates</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Batch processing capabilities</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>AI-driven image enhancements</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">Seamless cloud integration</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">
+                  Real-time collaboration tools
+                </span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <button className="btn btn-primary btn-block">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div className="card w-96 bg-base-100 shadow-sm">
+          <div className="card-body">
+            <span className="badge badge-xs badge-warning">Most Popular</span>
+            <div className="flex justify-between">
+              <h2 className="text-3xl font-bold">Premium</h2>
+              <span className="text-xl">$29/mo</span>
+            </div>
+            <ul className="mt-6 flex flex-col gap-2 text-xs">
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>High-resolution image generation</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Customizable style templates</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>Batch processing capabilities</span>
+              </li>
+              <li>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-success"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span>AI-driven image enhancements</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">Seamless cloud integration</span>
+              </li>
+              <li className="opacity-50">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="size-4 me-2 inline-block text-base-content/50"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+                <span className="line-through">
+                  Real-time collaboration tools
+                </span>
+              </li>
+            </ul>
+            <div className="mt-6">
+              <button className="btn btn-primary btn-block">Subscribe</button>
+            </div>
           </div>
         </div>
       </div>

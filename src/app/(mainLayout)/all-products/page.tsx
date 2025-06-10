@@ -21,7 +21,7 @@ const ProductsPage = () => {
   return (
     <>
       <h3 className="mx-auto text-center pt-5 text-xl font-bold">
-        Products Page
+        PRODUCTS
       </h3>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         {allTodos.map((todo: TTodo) => (

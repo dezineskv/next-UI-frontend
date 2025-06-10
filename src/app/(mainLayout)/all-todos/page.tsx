@@ -19,7 +19,7 @@ const TodosList = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">ToDos List</h2>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">TODOS</h2>
       <div className="overflow-x-auto max-w-5xl mx-auto bg-slate-500 my-10">
         <table className="table">
           <thead>

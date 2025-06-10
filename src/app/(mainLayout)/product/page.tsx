@@ -19,11 +19,13 @@ const ProductsTop = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">
-        Featured Products
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">Products</h2>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
+        FEATURED PRODUCTS
       </h2>
-      <div className="flex justify-center items-center flex-col">
-        <p className="w-full flex justify-center mt-5">
+
+      <div className="flex justify-center items-center flex-col max-w-10/12">
+        <p className="w-full flex justify-end mt-5">
           <a href="/all-products">
             <button className="btn ">All Products</button>
           </a>
