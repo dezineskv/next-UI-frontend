@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="navbar bg-base-100 shadow-sm">
         <div className="flex-1">
           <a className="btn btn-ghost text-xl" href="/">
-            LOGO
+            <img src="https://static.wixstatic.com/media/ee7859_c05d5de85bb04ff1bf63a598e9fcdbb8~mv2.png/v1/fill/w_120,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KimboticLogo.png" alt="logo"/>
           </a>
         </div>
         <div className="flex-none">
@@ -170,7 +170,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <button className="btn btn-ghost btn-circle">
+          {/* <button className="btn btn-ghost btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -185,7 +185,28 @@ const Navbar = () => {
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
               />
             </svg>
-          </button>
+          </button> */}
+          <div className="max-w-3xl pr-5">
+            <label className="input">
+              <svg
+                className="h-[1em] opacity-50"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <g
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                  strokeWidth="2.5"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </g>
+              </svg>
+              <input type="search" required placeholder="Search" />
+            </label>
+          </div>
           <div className="pt-2">
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
