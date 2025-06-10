@@ -19,7 +19,9 @@ const ProductsTop = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">Products</h2>
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
+        Products
+      </h2>
       <h2 className="mx-auto text-center pt-5 text-xl font-bold">
         FEATURED PRODUCTS
       </h2>

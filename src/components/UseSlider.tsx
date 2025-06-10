@@ -10,7 +10,7 @@ const UseSlider = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 mb-10 text-5xl font-bold">
+      <h2 className="mx-auto text-center pt-5 mb-10 text-5xl font-bold text-amber-500">
         Testimonials
       </h2>
 

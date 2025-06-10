@@ -3,7 +3,9 @@ import React from "react";
 const AboutUs = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">ABOUT</h2>
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
+        ABOUT
+      </h2>
       <div className="hero bg-base-200 my-20">
         <div className="hero-content flex-col lg:flex-row">
           <img

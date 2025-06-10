@@ -3,7 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">Services</h2>
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
+        Services
+      </h2>
       <h2 className="mx-auto text-center pt-5 text-xl font-bold">
         Check out these options
       </h2>

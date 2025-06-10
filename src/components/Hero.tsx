@@ -20,7 +20,7 @@ const Hero = () => {
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
           <h2
-            className="mb-5 text-5xl font-bold"
+            className="mb-5 text-5xl font-bold text-amber-500"
             style={{
               fontFamily: "var(--font-inter)",
             }}

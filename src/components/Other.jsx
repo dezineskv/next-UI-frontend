@@ -3,7 +3,7 @@ import React from "react";
 const Other = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-5xl font-bold">
+      <h2 className="mx-auto text-center pt-5 text-5xl font-bold text-amber-500">
         Highlights
       </h2>
       <div className="flex flex-wrap justify-center gap-4 mx-auto mt-5 mb-10 pb-10 max-w-9/12">

@@ -3,7 +3,7 @@ import React from "react";
 const Songs = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-5xl font-bold">Songs</h2>
+      <h2 className="mx-auto text-center pt-5 text-5xl font-bold text-amber-500">Songs</h2>
       <div className="justify-center mx-auto mb-10">
         <p className="text-white text-center mb-10 pt-5">
           Listen while you work or play. Check out this music getting

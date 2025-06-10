@@ -19,7 +19,7 @@ const TodosTop = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
         TOP 5 TODOS
       </h2>
       <div className="flex justify-center items-center flex-col max-w-10/12">
@@ -56,7 +56,6 @@ const TodosTop = () => {
                       >
                         Details
                       </Link>
-                      
                     </td>
                   </tr>
                 ) : (
