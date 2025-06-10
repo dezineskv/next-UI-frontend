@@ -2,11 +2,9 @@
 import { TTodo } from "@/types";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import Hero from "@/components/Hero";
 
-const ProductsPage = () => {
+const ProductsTop = () => {
   const [allTodos, setAllTodos] = useState<TTodo[]>([]);
   const fetchTodos = async () => {
     try {
@@ -18,23 +16,33 @@ const ProductsPage = () => {
     fetchTodos();
   }, []);
   console.log(allTodos);
+
   return (
     <>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold">
-        Products Page
-      </h3>
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">
+        Featured Products
+      </h2>
+      <div className="flex justify-center items-center flex-col">
+        <p className="w-full flex justify-center mt-5">
+          <a href="/all-products">
+            <button className="btn ">All Products</button>
+          </a>
+        </p>
+      </div>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
-        {allTodos.map((todo: TTodo) => (
-          <div
-            key={todo.id}
-            className="card bg-base-100 image-full w-96 shadow-sm"
-          >         
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="Shoes"
-                />{" "}
-              </figure>
+        <>
+          {allTodos.map((todo: TTodo) =>
+            todo.id <= 6 ? (
+              <div
+                key={todo.id}
+                className="card bg-base-100 image-full w-96 shadow-sm"
+              >
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />{" "}
+                </figure>
                 <div className="card-body">
                   <h2 className="card-title">{todo.todo}</h2>
 
@@ -48,17 +56,14 @@ const ProductsPage = () => {
                       Details
                     </Link>
                   </div>
-                  {/* <div className="card-actions justify-end">
-  <button className="btn btn-primary">Buy Now</button>
-</div> */}
                 </div>
               </div>
-            
-         
-        ))}
+            ) : null
+          )}
+        </>
       </div>
     </>
   );
 };
 
-export default ProductsPage;
+export default ProductsTop;

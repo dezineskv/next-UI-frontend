@@ -1,4 +1,11 @@
-import React from 'react'
+import React from "react";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 const Hero = () => {
   return (
@@ -12,8 +19,20 @@ const Hero = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content text-neutral-content text-center">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">
+          <h2
+            className="mb-5 text-5xl font-bold"
+            style={{
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            Hello there
+          </h2>
+          <p
+            className="mb-5 text-xl font-bold"
+            style={{
+              fontFamily: "var(--font-inter)",
+            }}
+          >
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
@@ -23,6 +42,6 @@ const Hero = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;
