@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
   const [isdark, setIsdark] = useState(
-    JSON.parse(localStorage.getItem("isdark"))
+    JSON.parse(localStorage.getItem("isdark") || "{}")
   );
   useEffect(() => {
     localStorage.setItem("isdark", JSON.stringify(isdark));
@@ -23,7 +23,7 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle"
+              className="btn btn-ghost btn-circle pr-10"
             >
               <div className="indicator">
                 <svg
