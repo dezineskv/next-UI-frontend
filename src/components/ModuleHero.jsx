@@ -10,12 +10,12 @@ const ModuleHero = () => {
             className="max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
+            <h2 className="text-5xl font-bold header">Box Office News!</h2>
+            <h3 className="py-6 text-black">
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
-            </p>
+            </h3>
             <a href="/about">
               <button className="btn btn-primary">Get Started</button>
             </a>

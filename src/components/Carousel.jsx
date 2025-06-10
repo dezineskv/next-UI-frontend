@@ -3,13 +3,13 @@ import React from "react";
 const Carousel = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-5xl font-bold text-amber-500">
+      <h2 className="mx-auto text-center pt-5 text-5xl font-bold header">
         Remember to Travel
       </h2>
       <div className="justify-center mx-auto mb-10 pt-5">
-        <p className="text-white text-center mb-10">
+        <h3 className="text-white text-center mb-10 subhead">
           Some views to consider for you next trip...
-        </p>
+        </h3>
 
         <div className="carousel w-full">
           <div id="slide1" className="carousel-item relative w-full">

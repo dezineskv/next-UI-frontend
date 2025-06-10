@@ -21,7 +21,7 @@ const SingleTodo = ({ id }: { id: number }) => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold header">
         Product Page
       </h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">

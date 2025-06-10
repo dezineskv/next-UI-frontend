@@ -19,12 +19,12 @@ const ProductsTop = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
         Products
       </h2>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
-        FEATURED PRODUCTS
-      </h2>
+      <h3 className="mx-auto text-center pt-5 text-xl font-bol subhead">
+        Featured Products
+      </h3>
 
       <div className="flex justify-center items-center flex-col max-w-10/12">
         <p className="w-full flex justify-end mt-5">

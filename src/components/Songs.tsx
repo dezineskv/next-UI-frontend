@@ -3,15 +3,17 @@ import React from "react";
 const Songs = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-5xl font-bold text-amber-500">Songs</h2>
+      <h2 className="mx-auto text-center pt-5 text-5xl font-bold header">
+        Songs
+      </h2>
       <div className="justify-center mx-auto mb-10">
-        <p className="text-white text-center mb-10 pt-5">
+        <h3 className="text-white text-center mb-10 pt-5 subhead">
           Listen while you work or play. Check out this music getting
           attention...
-        </p>
+        </h3>
         <div className="max-w-10/12 mx-auto px-10">
           <ul className="list bg-base-100 rounded-box shadow-md">
-            <li className="p-4 pb-2 text-xs opacity-60 tracking-wide">
+            <li className="p-4 pb-2 text-lg font-boldopacity-60 tracking-wide subhead">
               Most played songs this week
             </li>
 
@@ -23,7 +25,7 @@ const Songs = () => {
                 />
               </div>
               <div>
-                <div>Dio Lupa</div>
+                <div className="font-bold">Dio Lupa</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Remaining Reason
                 </div>
@@ -78,7 +80,7 @@ const Songs = () => {
                 />
               </div>
               <div>
-                <div>Ellie Beilish</div>
+                <div className="font-bold">Ellie Beilish</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Bears of a fever
                 </div>
@@ -132,7 +134,7 @@ const Songs = () => {
                 />
               </div>
               <div>
-                <div>Sabrino Gardener</div>
+                <div className="font-bold">Sabrino Gardener</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Cappuccino
                 </div>

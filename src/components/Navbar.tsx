@@ -12,10 +12,14 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar bg-base-100 shadow-sm">
+      <div className="navbar bg-base-100 shadow-sm pt-5">
+        {/* logo flex 1 */}
         <div className="flex-1">
           <a className="btn btn-ghost text-xl" href="/">
-            <img src="https://static.wixstatic.com/media/ee7859_c05d5de85bb04ff1bf63a598e9fcdbb8~mv2.png/v1/fill/w_120,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KimboticLogo.png" alt="logo"/>
+            <img
+              src="https://static.wixstatic.com/media/ee7859_c05d5de85bb04ff1bf63a598e9fcdbb8~mv2.png/v1/fill/w_120,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KimboticLogo.png"
+              alt="logo"
+            />
           </a>
         </div>
         <div className="flex-none">
@@ -23,14 +27,14 @@ const Navbar = () => {
             <div
               tabIndex={0}
               role="button"
-              className="btn btn-ghost btn-circle pr-10"
+              className="btn btn-ghost btn-circle pr-10 pt-2"
             >
               <div className="indicator">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewBox="0 0 18 18"
                   stroke="currentColor"
                 >
                   <path
@@ -43,6 +47,8 @@ const Navbar = () => {
                 <span className="badge badge-sm indicator-item">8</span>
               </div>
             </div>
+
+            {/* cart dropdown menu */}
             <div
               tabIndex={0}
               className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
@@ -58,6 +64,8 @@ const Navbar = () => {
               </div>
             </div>
           </div>
+
+          {/* profile dropdown menu */}
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
@@ -91,8 +99,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {/* end of profile dropdown */}
+
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
+          {/* mobile dropdown menu */}
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -135,7 +146,9 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <Link className="btn btn-ghost " href="/">
+          {/* mobile dropdown menu ends */}
+
+          <Link className="btn btn-ghost font-extrabold" href="/">
             HOME
           </Link>
         </div>
@@ -170,23 +183,8 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          {/* <button className="btn btn-ghost btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button> */}
           <div className="max-w-3xl pr-5">
+            {/* search bar here */}
             <label className="input">
               <svg
                 className="h-[1em] opacity-50"

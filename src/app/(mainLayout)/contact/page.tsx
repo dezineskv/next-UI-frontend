@@ -3,8 +3,8 @@ import React from "react";
 const ContactUs = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
-        CONTACT
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
+        Contact
       </h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">

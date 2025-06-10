@@ -44,8 +44,8 @@ const TodosList = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
-        TODOS
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
+        ToDos
       </h2>
       <div className="overflow-x-auto max-w-5xl mx-auto bg-slate-500 my-10">
         <table className="table">

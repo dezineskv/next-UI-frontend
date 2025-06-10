@@ -20,9 +20,9 @@ const ProductsPage = () => {
   console.log(allTodos);
   return (
     <>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold">
-        PRODUCTS
-      </h3>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold header">
+        Products
+      </h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         {allTodos.map((todo: TTodo) => (
           <div

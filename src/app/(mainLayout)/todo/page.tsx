@@ -19,8 +19,8 @@ const TodosTop = () => {
 
   return (
     <>
-      <h2 className="mx-auto text-center pt-15 text-5xl font-bold text-amber-500">
-        TOP 5 TODOS
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
+        Top 5 ToDos
       </h2>
       <div className="flex justify-center items-center flex-col max-w-10/12">
         <p className="w-full flex justify-end mt-5">
