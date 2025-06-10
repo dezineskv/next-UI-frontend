@@ -110,14 +110,18 @@ const Navbar = () => {
               <li>
                 <a href="/about">About</a>
               </li>
-              <li>
-                <a href="/contact">Contact</a>
-              </li>
+
               <li>
                 <a href="/product">Product</a>
               </li>
               <li>
                 <a href="/all-todos">ToDos</a>
+              </li>
+              <li>
+                <a href="/services">Services</a>
+              </li>
+              <li>
+                <a href="/contact">Contact</a>
               </li>
               <li>
                 <a href="/login">Log In</a>
@@ -135,9 +139,11 @@ const Navbar = () => {
                 About
               </Link>
             </li>
+     
+     
             <li>
-              <Link className="btn btn-ghost " href="/contact">
-                Contact
+              <Link className="btn btn-ghost " href="/product">
+                Products
               </Link>
             </li>
             <li>
@@ -146,13 +152,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link className="btn btn-ghost " href="/product">
-                Products
+              <Link className="btn btn-ghost " href="/services">
+                Services
               </Link>
             </li>
             <li>
-              <Link className="btn btn-ghost " href="/services">
-                Services
+              <Link className="btn btn-ghost " href="/contact">
+                Contact
               </Link>
             </li>
           </ul>

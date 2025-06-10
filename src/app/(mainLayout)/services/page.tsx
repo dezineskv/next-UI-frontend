@@ -3,7 +3,10 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold">SERVICES</h2>
+      <h2 className="mx-auto text-center pt-15 text-5xl font-bold">Services</h2>
+      <h2 className="mx-auto text-center pt-5 text-xl font-bold">
+        Check out these options
+      </h2>{" "}
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <div className="card bg-primary text-primary-content w-96">
           <div className="card-body">
@@ -42,7 +45,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <div className="card w-96 bg-base-100 shadow-sm">
           <div className="card-body">

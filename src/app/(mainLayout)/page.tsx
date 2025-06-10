@@ -7,6 +7,7 @@ import Songs from "@/components/Songs";
 import ModuleHero from "@/components/ModuleHero";
 import Sorting from "@/components/Sorting";
 import ProductsTop from "./product/page";
+import Services from "./services/page";
 
 const Home = () => {
  
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <TodosTop />
       <ProductsTop/>
+      <Services/>
       <Carousel
       />
       <Songs />
