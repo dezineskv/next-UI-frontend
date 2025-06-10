@@ -48,7 +48,7 @@ const ProductsTop = () => {
                 <div className="card-body">
                   <h2 className="card-title">{todo.todo}</h2>
 
-                  <div>{todo.completed ? "Completed" : "Pending"}</div>
+                  {/* <div>{todo.completed ? "Completed" : "Pending"}</div> */}
 
                   <div className="space-x-1">
                     <Link

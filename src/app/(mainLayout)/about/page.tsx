@@ -17,7 +17,9 @@ const AboutUs = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-primary">Services</button>
+            <a href="/about">
+              <button className="btn btn-primary">Get Started</button>
+            </a>{" "}
           </div>
         </div>
       </div>
@@ -41,9 +43,7 @@ const AboutUs = () => {
                 />
               </svg>
             </div>
-            <div className="timeline-end timeline-box">
-              Atari & Nintendo
-            </div>
+            <div className="timeline-end timeline-box">Atari & Nintendo</div>
             <hr />
           </li>
           <li>

@@ -25,7 +25,7 @@ const TodosTop = () => {
       <div className="flex justify-center items-center flex-col max-w-10/12">
         <p className="w-full flex justify-end mt-5">
           <a href="/all-todos">
-            <button className="btn ">See All</button>
+            <button className="btn ">ToDo List</button>
           </a>
         </p>
       </div>

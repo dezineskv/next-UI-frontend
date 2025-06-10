@@ -16,7 +16,9 @@ const ModuleHero = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button className="btn btn-primary">Get Started</button>
+            <a href="/about">
+              <button className="btn btn-primary">Get Started</button>
+            </a>
           </div>
         </div>
       </div>

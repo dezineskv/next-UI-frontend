@@ -5,7 +5,7 @@ const Sorting = () => {
   return (
     <>
       <h2 className="mx-auto text-center pt-5 text-5xl font-bold">
-        ToDos Status
+        Greatness Awaits
       </h2>
       <div className="justify-center mx-auto mt-5 mb-10 pb-10 max-w-9/12">
 
