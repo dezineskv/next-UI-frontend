@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
 
   images: {
-    domains: ["static-00.iconduck.com"],
+    domains: ["static-00.iconduck.com", "cdn.flyonui.com"],
   },
 };
 

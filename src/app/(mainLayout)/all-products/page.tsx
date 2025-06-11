@@ -2,9 +2,7 @@
 import { TTodo } from "@/types";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import Hero from "@/components/Hero";
 
 const ProductsPage = () => {
   const [allTodos, setAllTodos] = useState<TTodo[]>([]);

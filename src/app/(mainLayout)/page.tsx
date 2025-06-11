@@ -8,7 +8,6 @@ import ModuleHero from "@/components/ModuleHero";
 import Sorting from "@/components/Sorting";
 import ProductsTop from "./product/page";
 import Services from "./services/page";
-import Slider from "@/components/Slider";
 import UseSlider from "@/components/UseSlider";
 import Other from './../../components/Other';
 

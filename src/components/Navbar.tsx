@@ -15,12 +15,12 @@ const Navbar = () => {
       <div className="navbar bg-base-100 shadow-sm pt-5">
         {/* logo flex 1 */}
         <div className="flex-1">
-          <a className="btn btn-ghost text-xl" href="/">
+          <Link className="btn btn-ghost text-xl" href="/">
             <img
               src="https://static.wixstatic.com/media/ee7859_c05d5de85bb04ff1bf63a598e9fcdbb8~mv2.png/v1/fill/w_120,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KimboticLogo.png"
               alt="logo"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex-none">
           <div className="dropdown dropdown-end">
