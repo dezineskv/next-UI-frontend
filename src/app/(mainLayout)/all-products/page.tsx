@@ -20,37 +20,26 @@ const ProductsPage = () => {
   console.log(allTodos);
   return (
     <>
-      <h2 className="mx-auto text-center pt-5 text-xl font-bold header">
+      <h2 className="mx-auto text-center pt-5 text-5xl font-bold header">
         Products
       </h2>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         {allTodos.map((todo: TTodo) => (
-          <div
-            key={todo.id}
-            className="card bg-base-100 image-full w-96 shadow-sm"
-          >
+          <div key={todo.id} className="card bg-base-100 w-96 shadow-sm">
             <figure>
               <img
                 src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                 alt="Shoes"
-              />{" "}
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">{todo.todo}</h2>
-
-              <div>{todo.completed ? "Completed" : "Pending"}</div>
-
-              <div className="space-x-1">
-                <Link
-                  href={`/todo/${todo.id}`}
-                  className="btn btn-xs btn-primary"
-                >
-                  Details
+              <p>{todo.completed ? "Completed" : "Pending"}</p>
+              <div className="card-actions justify-end">
+                <Link href={`/todo/${todo.id}`}>
+                  <button className="btn btn-primary">Details</button>
                 </Link>
               </div>
-              {/* <div className="card-actions justify-end">
-  <button className="btn btn-primary">Buy Now</button>
-</div> */}
             </div>
           </div>
         ))}

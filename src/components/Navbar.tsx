@@ -130,7 +130,7 @@ const Navbar = () => {
               </li>
 
               <li>
-                <a href="/product">Product</a>
+                <a href="/all-products">Products</a>
               </li>
               <li>
                 <a href="/all-todos">ToDos</a>
@@ -161,7 +161,7 @@ const Navbar = () => {
             </li>
 
             <li>
-              <Link className="btn btn-ghost " href="/product">
+              <Link className="btn btn-ghost " href="/all-products">
                 Products
               </Link>
             </li>

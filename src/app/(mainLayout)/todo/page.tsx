@@ -29,7 +29,7 @@ const TodosTop = () => {
           </a>
         </p>
       </div>
-      <div className="overflow-x-auto max-w-6xl mx-auto bg-slate-500 my-10">
+      <div className="overflow-x-auto mx-auto bg-slate-500 my-10 max-w-9/12">
         <table className="table">
           <thead>
             <tr>
