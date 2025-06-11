@@ -29,12 +29,12 @@ const Navbar = () => {
               role="button"
               className="btn btn-ghost btn-circle pr-10 pt-2"
             >
-              <div className="indicator">
+              <div className="indicator" style={{ minWidth: "30px" }}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
+                  className="h-15 w-15"
                   fill="none"
-                  viewBox="0 0 18 18"
+                  viewBox="0 0 28 28"
                   stroke="currentColor"
                 >
                   <path
@@ -44,7 +44,12 @@ const Navbar = () => {
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                   />
                 </svg>
-                <span className="badge badge-sm indicator-item">8</span>
+                <span
+                  className="badge badge-sm indicator-item"
+                  style={{ top: "20px", backgroundColor: "#0000003d" }}
+                >
+                  8
+                </span>
               </div>
             </div>
 
