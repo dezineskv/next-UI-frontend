@@ -32,7 +32,7 @@ const TodosList = () => {
   });
 
   // Handle sorting when a table header is clicked
-  const handleSort = (key) => {
+  const handleSort = (key: string | null) => {
     setSortConfig((prevConfig) => {
       const direction =
         prevConfig.key === key && prevConfig.direction === "asc"
