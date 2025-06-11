@@ -3,12 +3,12 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [isdark, setIsdark] = useState(
-    JSON.parse(localStorage.getItem("isdark") || "{}")
-  );
-  useEffect(() => {
-    localStorage.setItem("isdark", JSON.stringify(isdark));
-  }, [isdark]);
+  // const [isdark, setIsdark] = useState(
+  //   JSON.parse(localStorage.getItem("isdark") || "{}")
+  // );
+  // useEffect(() => {
+  //   localStorage.setItem("isdark", JSON.stringify(isdark));
+  // }, [isdark]);
 
   return (
     <>
@@ -208,13 +208,13 @@ const Navbar = () => {
           <div className="pt-2">
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
-              <input
+              {/* <input
                 type="checkbox"
                 className="theme-controller"
                 value="light"
                 checked={isdark}
                 onChange={() => setIsdark(!isdark)}
-              />
+              /> */}
 
               {/* sun icon */}
               <svg
