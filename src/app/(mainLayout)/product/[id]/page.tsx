@@ -1,10 +1,9 @@
-import SingleProduct from "@/components/SingleProduct";
+import SingleTodo from "@/components/SingleTodo";
 
 const ProductId = async ({ params }: { params: Promise<{ id: number }> }) => {
   const id = (await params).id;
 
-  return <SingleProduct id={id} />;
+  return <SingleTodo id={id} />;
 };
 
 export default ProductId;
-
