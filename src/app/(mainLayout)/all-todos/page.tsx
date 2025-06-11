@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const TodosList = () => {
   const [allTodos, setAllTodos] = useState<TTodo[]>([]);
-  const [data, setData] = useState([]);
-  const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
+  // const [data, setData] = useState([]);
+  // const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
 
   const fetchTodos = async () => {
     try {
       const res = await axios.get("https://dummyjson.com/todos");
       setAllTodos(res.data.todos);
-      setData(res.data.todos);
+      // setData(res.data.todos);
     } catch (error) {}
   };
   useEffect(() => {
@@ -22,25 +22,25 @@ const TodosList = () => {
   console.log(allTodos);
 
   // Sort data based on the current sort configuration
-  const sortedData = [...data].sort((a, b) => {
-    if (!sortConfig.key) return 0;
-    const aValue = a[sortConfig.key];
-    const bValue = b[sortConfig.key];
-    if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
-    if (aValue > bValue) return sortConfig.direction === "asc" ? 1 : -1;
-    return 0;
-  });
+  // const sortedData = [...data].sort((a, b) => {
+  //   if (!sortConfig.key) return 0;
+  //   const aValue = a[sortConfig.key];
+  //   const bValue = b[sortConfig.key];
+  //   if (aValue < bValue) return sortConfig.direction === "asc" ? -1 : 1;
+  //   if (aValue > bValue) return sortConfig.direction === "asc" ? 1 : -1;
+  //   return 0;
+  // });
 
   // Handle sorting when a table header is clicked
-  const handleSort = (key: string | null) => {
-    setSortConfig((prevConfig) => {
-      const direction =
-        prevConfig.key === key && prevConfig.direction === "asc"
-          ? "desc"
-          : "asc";
-      return { key, direction };
-    });
-  };
+  // const handleSort = (key: string | null) => {
+  //   setSortConfig((prevConfig) => {
+  //     const direction =
+  //       prevConfig.key === key && prevConfig.direction === "asc"
+  //         ? "desc"
+  //         : "asc";
+  //     return { key, direction };
+  //   });
+  // };
 
   return (
     <>
@@ -53,7 +53,8 @@ const TodosList = () => {
             <tr>
               <th>ID</th>
               <th>Todo</th>
-              <th onClick={() => handleSort("completed")}>
+              {/* <th onClick={() => handleSort("completed")}> */}
+              <th>
                 <div className="flex">
                   Status&nbsp;
                   <svg
@@ -80,7 +81,7 @@ const TodosList = () => {
             {/* {allTodos.length > 10 ? ( */}
 
             <>
-              {sortedData.map((todo: TTodo) => (
+              {allTodos.map((todo: TTodo) => (
                 <tr key={todo.id}>
                   <td>{todo.id}</td>
                   <td>{todo.todo}</td>
