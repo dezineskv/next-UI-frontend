@@ -4,41 +4,67 @@
 @import "flyonui/variants.css";
 @source "./node_modules/flyonui/flyonui.js";
 @source "./node_modules/sortablejs/Sortable.min.js"; */
+@custom-variant dark (&:is(.dark *));
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color: black;
   --color-amber-500: oklch(76.9% 0.188 70.08);
+  --primary: "black";
 }
-/* body {
-  color: black;
-} */
-
+.dark {
+  --background: #0a0a0a;
+  --foreground: #211c1c;
+  --primary: "white";
+  --color: black;
+}
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --primary: var(--primary);
+  --color: var(--color);
 }
-
-/* @media (prefers-color-scheme: dark) {
+h3.subhead {
+  color: var(--color);
+}
+@media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #211c1c;
+    --color-foreground: var(--foreground);
+    --color: var(--color);
+ 
   }
+
+  }
+  /* @media (prefers-color-scheme: light) {
+    :root {
+      --background: var(--background);
+      --foreground: var(--foreground);
+      --color-foreground: var(--foreground);
+      --color: var(--color);
+  
+    }
 } */
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  color: var(--color);
   font-family: Arial, Helvetica, sans-serif;
 }
 h2.header {
   color: var(--color-amber-500);
 }
-h3.subhead {
-  color: #efefef;
-}
+
 li.subhead {
   color: #000000;
+}
+li > span, p {
+  color: var(--color);
+}
+td {
+  color: white;
 }

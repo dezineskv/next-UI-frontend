@@ -1,4 +1,5 @@
 import React from "react";
+import { Music, Headphones, Guitar } from "lucide-react";
 
 const Songs = () => {
   return (
@@ -7,22 +8,19 @@ const Songs = () => {
         Songs
       </h2>
       <div className="justify-center mx-auto mb-10">
-        <h3 className="text-white text-center mb-10 pt-5 subhead">
+        <h4 className="text-white text-center mb-10 pt-5 subhead">
           Listen while you work or play. Check out this music getting
           attention...
-        </h3>
+        </h4>
         <div className="max-w-10/12 mx-auto px-10">
           <ul className="list bg-base-100 rounded-box shadow-md">
-            <li className="p-4 pb-2 text-lg font-boldopacity-60 tracking-wide subhead">
-              Most played songs this week
+            <li className="p-4 pb-2 text-lg font-bold opacity-60 tracking-wide subhead text-primary">
+                Instruments learned by ear vs formal training
             </li>
 
             <li className="list-row">
               <div>
-                <img
-                  className="size-10 rounded-box"
-                  src="https://img.daisyui.com/images/profile/demo/1@94.webp"
-                />
+                <Music />
               </div>
               <div>
                 <div className="font-bold">Dio Lupa</div>
@@ -74,10 +72,7 @@ const Songs = () => {
 
             <li className="list-row">
               <div>
-                <img
-                  className="size-10 rounded-box"
-                  src="https://img.daisyui.com/images/profile/demo/4@94.webp"
-                />
+                <Headphones />
               </div>
               <div>
                 <div className="font-bold">Ellie Beilish</div>
@@ -128,10 +123,7 @@ const Songs = () => {
 
             <li className="list-row">
               <div>
-                <img
-                  className="size-10 rounded-box"
-                  src="https://img.daisyui.com/images/profile/demo/3@94.webp"
-                />
+                <Guitar />
               </div>
               <div>
                 <div className="font-bold">Sabrino Gardener</div>
@@ -139,8 +131,8 @@ const Songs = () => {
                   Cappuccino
                 </div>
               </div>
-              <p className="list-col-wrap text-xs">
-                "Cappuccino" quickly gained attention for its smooth melody and
+              <p className="list-col-wrap text-xs text-black">
+                "Cappuccino" quickly gained attentio for its smooth melody and
                 relatable themes. The song’s success propelled Sabrino into the
                 spotlight, solidifying their status as a rising star.
               </p>

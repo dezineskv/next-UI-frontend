@@ -1,14 +1,38 @@
 "use client";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
-  // const [isdark, setIsdark] = useState(
-  //   JSON.parse(localStorage.getItem("isdark") || "{}")
-  // );
-  // useEffect(() => {
-  //   localStorage.setItem("isdark", JSON.stringify(isdark));
-  // }, [isdark]);
+  // Initialize state with a default value (e.g., false or null)
+  const [isdark, setIsdark] = useState(false); // Or useState<boolean | null>(null);
+
+  useEffect(() => {
+    // Access localStorage and window.document only on the client side
+    const storedDarkMode = localStorage.getItem("isdark");
+    const initialIsDark = storedDarkMode ? JSON.parse(storedDarkMode) : false; // Default to false if not found
+    setIsdark(initialIsDark);
+
+    const darkModeElement = window.document.getElementById("html");
+    if (darkModeElement) {
+      // Apply the dark class based on the state
+      if (initialIsDark) {
+        darkModeElement.classList.add("dark");
+      } else {
+        darkModeElement.classList.remove("dark");
+      }
+    }
+  }, []); // Empty dependency array means this effect runs only once after initial render
+
+  // Add another useEffect to handle changes to isdark state
+  useEffect(() => {
+    localStorage.setItem("isdark", JSON.stringify(isdark));
+    const darkModeElement = window.document.getElementById("html");
+    if (darkModeElement) {
+      darkModeElement.classList.toggle("dark", isdark); // Use toggle with force parameter
+    }
+  }, [isdark]); // This effect runs whenever isdark changes
 
   return (
     <>
@@ -17,9 +41,17 @@ const Navbar = () => {
         <div className="flex-1">
           <Link className="btn btn-ghost text-xl" href="/">
             <img
-              src="https://static.wixstatic.com/media/ee7859_c05d5de85bb04ff1bf63a598e9fcdbb8~mv2.png/v1/fill/w_120,h_28,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/KimboticLogo.png"
-              alt="logo"
+              src="https://i.ibb.co/F4324Yx5/logo-gray.png"
+              alt="Logo"         
+              className="max-h-[120px] w-auto max-w-[180px] border-0 pr-4 pb-4 pt-3 sm:mx-auto md:ml-2 md:pl-2"
             />
+            {/* <Image
+              src={
+                theme == "dark"
+                  ? "https://i.ibb.co/0ydBkZYJ/logo-black.png"
+                  : "https://i.ibb.co/7xV8t6xY/logo-white.png"
+              }
+            /> */}
           </Link>
         </div>
         <div className="flex-none">
@@ -59,7 +91,7 @@ const Navbar = () => {
               className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow"
             >
               <div className="card-body">
-                <span className="text-lg font-bold">8 Items</span>
+                <span className="text-lg font-bold text-primary">8 Items</span>
                 <span className="text-info">Subtotal: $999</span>
                 <div className="card-actions">
                   <button className="btn btn-primary btn-block">
@@ -153,7 +185,7 @@ const Navbar = () => {
           </div>
           {/* mobile dropdown menu ends */}
 
-          <Link className="btn btn-ghost font-extrabold" href="/">
+          <Link className="btn btn-ghost font-extrabold pl-8" href="/">
             HOME
           </Link>
         </div>
@@ -213,13 +245,13 @@ const Navbar = () => {
           <div className="pt-2">
             <label className="swap swap-rotate">
               {/* this hidden checkbox controls the state */}
-              {/* <input
+              <input
                 type="checkbox"
                 className="theme-controller"
                 value="light"
                 checked={isdark}
                 onChange={() => setIsdark(!isdark)}
-              /> */}
+              />
 
               {/* sun icon */}
               <svg

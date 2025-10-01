@@ -17,20 +17,21 @@ const Hero = () => {
       }}
     >
       <div className="hero-overlay"></div>
-      <div className="hero-content text-neutral-content text-center">
+      <div className="hero-content text-neutral-content text-center mb-10 pb-10">
         <div className="max-w-md">
           <h2
-            className="mb-5 text-5xl font-bold header"
+            className="mb-8 text-5xl font-bold header"
             style={{
               fontFamily: "var(--font-inter)",
             }}
           >
-            Hello there
+            Random Site
           </h2>
           <p
-            className="mb-5 text-xl font-bold"
+            className="mb-8 text-xl font-bold text-white"
             style={{
               fontFamily: "var(--font-inter)",
+              color: "white",
             }}
           >
             Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda

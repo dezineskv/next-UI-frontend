@@ -6,9 +6,9 @@ const Services = () => {
       <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
         Services
       </h2>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bold subhead">
+      <h4 className="mx-auto text-center pt-5 text-xl font-bold subhead">
         Check out these options
-      </h3>
+      </h4>
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
         <div className="card bg-primary text-primary-content w-96">
           <div className="card-body">

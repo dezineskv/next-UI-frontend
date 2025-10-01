@@ -94,17 +94,10 @@ const TodosList = () => {
                     >
                       Details
                     </Link>
-
-                    <button className="btn btn-xs btn-primary">Edit</button>
-
-                    <button className="btn btn-xs btn-primary">Delete</button>
                   </td>
                 </tr>
               ))}
             </>
-            {/* // ) : (
-              //   <div className="text-red-700">No ToDos</div>
-              // )} */}
           </tbody>
         </table>
       </div>
