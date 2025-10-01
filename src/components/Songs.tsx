@@ -8,14 +8,14 @@ const Songs = () => {
         Songs
       </h2>
       <div className="justify-center mx-auto mb-10">
-        <h4 className="text-white text-center mb-10 pt-5 subhead">
+        <h4 className="text-primary text-center text-lg my-10 subhead">
           Listen while you work or play. Check out this music getting
           attention...
         </h4>
         <div className="max-w-10/12 mx-auto px-10">
           <ul className="list bg-base-100 rounded-box shadow-md">
             <li className="p-4 pb-2 text-lg font-bold opacity-60 tracking-wide subhead text-primary">
-                Instruments learned by ear vs formal training
+              Instruments learned by ear vs formal training
             </li>
 
             <li className="list-row">
@@ -23,7 +23,7 @@ const Songs = () => {
                 <Music />
               </div>
               <div>
-                <div className="font-bold">Dio Lupa</div>
+                <div className="font-bold">Look</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Remaining Reason
                 </div>
@@ -75,7 +75,7 @@ const Songs = () => {
                 <Headphones />
               </div>
               <div>
-                <div className="font-bold">Ellie Beilish</div>
+                <div className="font-bold">Listen</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Bears of a fever
                 </div>
@@ -126,7 +126,7 @@ const Songs = () => {
                 <Guitar />
               </div>
               <div>
-                <div className="font-bold">Sabrino Gardener</div>
+                <div className="font-bold">Learn</div>
                 <div className="text-xs uppercase font-semibold opacity-60">
                   Cappuccino
                 </div>

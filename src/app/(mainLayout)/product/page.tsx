@@ -22,9 +22,9 @@ const ProductsTop = () => {
       <h2 className="mx-auto text-center pt-15 text-5xl font-bold header">
         Products
       </h2>
-      <h3 className="mx-auto text-center pt-5 text-xl font-bol subhead">
+        <h4 className="text-primary text-center text-lg my-10 subhead">
         Featured Products
-      </h3>
+      </h4>
 
       <div className="flex justify-center items-center flex-col max-w-10/12">
         <p className="w-full flex justify-end mt-5">

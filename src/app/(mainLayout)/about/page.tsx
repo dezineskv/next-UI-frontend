@@ -29,10 +29,12 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <h3 className="mx-auto text-center pt-2 text-lg">Timelines</h3>
+      <div className="divider"></div>
+
+      <h3 className="mx-auto text-center text-primary text-lg">Timelines</h3>
 
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10">
-        <ul className="timeline">
+        <ul className="timeline text-primary">
           <li>
             <div className="timeline-start">1984</div>
             <div className="timeline-middle">
@@ -135,7 +137,7 @@ const AboutUs = () => {
       </div>
       <div className="divider"></div>
 
-      <h3 className="mx-auto text-center pt-5text-lg">Stats</h3>
+      <h3 className="mx-auto text-center pt-5 text-primary text-lg">Stats</h3>
 
       <div className="flex flex-wrap justify-center gap-3 mx-auto w-11/12 my-10  pb-10 ">
         <div className="stats shadow">
@@ -155,9 +157,11 @@ const AboutUs = () => {
                 ></path>
               </svg>
             </div>
-            <div className="stat-title">Total Likes</div>
+            <div className="stat-title text-primary">Total Likes</div>
             <div className="stat-value text-primary">25.6K</div>
-            <div className="stat-desc">21% more than last month</div>
+            <div className="stat-desc text-primary">
+              21% more than last month
+            </div>
           </div>
 
           <div className="stat">
@@ -176,9 +180,11 @@ const AboutUs = () => {
                 ></path>
               </svg>
             </div>
-            <div className="stat-title">Page Views</div>
+            <div className="stat-title text-secondary">Page Views</div>
             <div className="stat-value text-secondary">2.6M</div>
-            <div className="stat-desc">21% more than last month</div>
+            <div className="stat-desc text-secondary">
+              21% more than last month
+            </div>
           </div>
 
           <div className="stat">
@@ -189,7 +195,7 @@ const AboutUs = () => {
                 </div>
               </div>
             </div>
-            <div className="stat-value">86%</div>
+            <div className="stat-value text-gray-300">86%</div>
             <div className="stat-title">Tasks done</div>
             <div className="stat-desc text-secondary">31 tasks remaining</div>
           </div>

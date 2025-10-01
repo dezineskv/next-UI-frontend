@@ -34,21 +34,20 @@ h3.subhead {
   :root {
     --background: #0a0a0a;
     --foreground: #211c1c;
+    --primary: white;
     --color-foreground: var(--foreground);
     --color: var(--color);
- 
   }
-
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: var(--background);
+    --foreground: var(--foreground);
+    --primary: var(--primary);
+    --color-foreground: var(--foreground);
+    --color: var(--color);
   }
-  /* @media (prefers-color-scheme: light) {
-    :root {
-      --background: var(--background);
-      --foreground: var(--foreground);
-      --color-foreground: var(--foreground);
-      --color: var(--color);
-  
-    }
-} */
+}
 
 body {
   background: var(--background);
@@ -62,7 +61,8 @@ h2.header {
 li.subhead {
   color: #000000;
 }
-li > span, p {
+li > span,
+p {
   color: var(--color);
 }
 td {

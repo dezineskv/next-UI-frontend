@@ -8,7 +8,7 @@ const Carousel = () => {
         Remember Affirmations
       </h2>
       <div className="justify-center mx-auto mb-10 pt-5">
-        <h4 className="text-white text-center mb-10 subhead">
+        <h4 className="text-primary text-center text-lg mb-10 subhead">
           Some thoughts to consider...
         </h4>
 
